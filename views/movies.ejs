@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	<link href="style.css" rel="stylesheet" type="text/css">
+
+	<title></title>
+</head>
+<body>
+
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container-fluid">
+			<div class="text-right">
+				<button type="button" class="btn btn-default"><a href="/">New Search</a></button>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
+
+		<div class="row">
+			<div class="col-md-6 col-sm-6 text-left">
+				<p>Title: <%= Title %></p>
+				<br>
+				<p>Year: <%= Year %></p>
+				<br>
+				<p>Genre: <%= Genre %></p>
+				<br>
+				<p>Actors: <%= Actors %></p>
+				<br>
+				<p>Tomato Rating: <%= tomatoRating %></p>
+			</div>
+			<div class="col-md-6 col-sm-6 text-right">
+				<img src="<%= Poster %>">
+			</div>
+		</div>
+
+	</div>
+
+</body>
+</html>
